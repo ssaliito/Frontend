@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/asset/styles/styles.css">
+    <script src="/asset/js/jquery-3.7.1.min.js"></script>
+    <script src="/asset/js/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+    <main class="register">
+        <h1>Registro</h1>
+        <form id="formRegister">
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+            <input type="text" name="apellido" placeholder="Ingrese su apellido" required>
+            <input type="email" name="email" placeholder="tunombre@gmail.com"required>
+            <input type="password" name="contrasena" placeholder="Ingrese su contraseña"required>
+            <input type="number" name="documento" placeholder="Ingrese su numero de documento"required>
+            <select name="rol">
+                <option value="Usuario" selected>Usuario</option>
+                <option value="Usuario">Administrador</option>
+            </select>
+            <input type="text" name="estado" value="Activo" hidden>
+            <button type="submit">Registrarse</button>
+        </form>
+    </main>
+</body>
+<script src="/asset/js/register.js"></script>
+
+</html>
